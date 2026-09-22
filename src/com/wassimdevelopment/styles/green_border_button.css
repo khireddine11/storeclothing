@@ -1,0 +1,12 @@
+.button {
+    -fx-background-color: white;
+    -fx-border-radius: 3;
+    -fx-font-family: Arial;
+    -fx-background-radius: 3;
+    -fx-border-color: #006DFF;
+    -fx-text-fill: #006DFF;
+    -fx-border-width: 1;
+    
+
+    /*#FBCB55*/
+}

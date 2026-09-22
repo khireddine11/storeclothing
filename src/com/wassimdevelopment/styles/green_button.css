@@ -1,0 +1,13 @@
+.button {
+    -fx-background-color: #0C92F3;
+    /*#006DFF 2B52D9*/
+    -fx-border-radius: 3;
+    -fx-font-family: Arial;
+    -fx-font-size: 11;
+    -fx-background-radius: 3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/*#0C92F3*/
+/*006DFF*/

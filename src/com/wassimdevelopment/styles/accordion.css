@@ -1,0 +1,21 @@
+.accordion {
+    -fx-background-color: white;
+}
+
+.accordion.titled-pane {
+    -fx-background-color: white;
+}
+
+.accordion > .titled-pane > .title {
+    -fx-background-color:
+            white,
+            -fx-inner-border,
+            -fx-body-color;
+    -fx-background-insets: -1 0 0 0, 0 1 1 1, 1 2 2 2;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.titled-pane > *.content {
+    -fx-background-color: null;
+    -fx-border-color: null;
+}

@@ -1,0 +1,86 @@
+/*Style of entire tableView*/
+.table-view{
+    -fx-padding: 2px 2px 2px 2px;
+    -fx-focus-color: transparent;
+    /*-fx-background-color: transparent;*/
+}
+
+/*Style of entire tableView when is getting focused*/
+  .table-view:focused{
+      /*-fx-background-color: transparent;*/
+  }
+
+
+
+
+/*Style of each column header in the tableView*/
+  .table-view .column-header {
+      -fx-padding: 2px 2px 2px 2px;
+      -fx-background-color: white;
+      -fx-font-size:14px;
+      -fx-font-weight:bold;
+  }
+
+/*Style of each column header's background in the tableView*/
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0.0%, #424141 100.0%);
+}
+
+/*Style of each column header's label  in the tableView*/
+.table-view .column-header-background .label{
+    -fx-font-family: "Arial";
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-padding: 0.5em;
+    -fx-alignment:center;
+
+}
+
+/*Style of each column in the tableView*/
+  .table-view .table-column{
+      -fx-alignment:center;
+  }
+
+/*Style of each table cell*/
+  .table-view .table-cell{
+      -fx-font-family: Arial;
+      -fx-font-size:14px;
+      -fx-text-fill:black;
+      -fx-padding: 0.1em;
+
+  }
+
+
+/*Style for each < non odd> row of table view*/
+  .table-row-cell {
+      -fx-background-color: white;
+      -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+      -fx-padding: 0.0em;
+      -fx-cell-size: 42px;
+  }
+
+/*Style for each <odd> row of table view*/
+  .table-row-cell:odd{
+      -fx-background-color: white;
+      -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+      -fx-padding: 0.0em;
+  }
+
+
+/*Style of each entire row in the table view*/
+  .table-row-cell:selected {
+      /* -fx-border-color:transparent firebrick transparent firebrick  ;
+       -fx-border-width:2.0; */
+  }
+
+
+/*Style of each entire row in the table view when is hovered*/
+  .table-row-cell:hover {
+      -fx-background-color: #e1ecf9;
+  }
+
+/*Style of each entire row in the table view when is getting focused*/
+  .table-row-cell:focused {
+      -fx-background-color: #80ced6;
+  }

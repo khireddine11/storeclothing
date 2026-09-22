@@ -1,0 +1,11 @@
+
+.pane {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-pref-width: 200;
+    -fx-pref-height: 120;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 15, 0.2, 5, 4);
+}
+/*Style of entire tableView when is getting focused*/

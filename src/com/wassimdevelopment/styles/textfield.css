@@ -1,0 +1,13 @@
+.text-field {
+    -fx-font-family: Arial;
+    -fx-border-color: #222;
+    -fx-border-width: 1.4;
+    -fx-border-radius: 2;
+    -fx-background-radius: 2;
+    -fx-background-color: white;
+}
+
+.text-field:focused {
+    -fx-border-color: #2B52D9;
+    -fx-border-width: 2.2;
+}

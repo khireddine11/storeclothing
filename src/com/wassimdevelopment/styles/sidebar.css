@@ -1,0 +1,6 @@
+
+.sidebar {
+    -fx-background-color: white;;
+    -fx-border-color: #f1f1f1;;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.04), 25, 0.2, 1, 1);
+}

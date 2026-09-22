@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wassimdevelopment.AppController">
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label fx:id="dateLabel" alignment="BASELINE_LEFT" prefHeight="58.0" prefWidth="1100.0" text="Daily Sales Report" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Monospaced Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="548.0" style="-fx-background-color: #5c09ea;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="52.0" prefWidth="543.0" text="Total Revenue" textFill="#fbf8f8">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="543.0" text="0.00DZD" textFill="#fbf8f8">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="100.0" prefWidth="556.0" style="-fx-background-color: #08a11f;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="543.0" text="Total Transactions" textFill="#fbf8f8">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="543.0" text="0" textFill="#fbf8f8">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="1099.0" text="Top selling items today">
+                     <font>
+                        <Font name="Monospaced Regular" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <TableView fx:id="DailySales" fixedCellSize="0.0" style="-fx-font-family: Monospaced; -fx-font-size: 18;" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="677.0" text="Product Name" />
+                <TableColumn prefWidth="421.0" text="Quantity Sold" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

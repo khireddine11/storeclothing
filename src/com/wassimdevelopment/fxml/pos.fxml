@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1024.0" styleClass="Posfxml.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wassimdevelopment.controllers.PosContoller">
+    <stylesheets>
+        <URL value="@Posfxml.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="293.0" spacing="5.0">
+         <children>
+            <Label text="Scan Product">
+               <font>
+                  <Font name="Monospaced Regular" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="returnProductTF" onKeyPressed="#returnProduct" promptText="Enter Barcode..." style="-fx-font-family: monospaced; -fx-font-size: 18;" />
+            <Button mnemonicParsing="false" onAction="#addtoCard" prefHeight="36.0" prefWidth="273.0" style="-fx-background-color: #5c09ea;" text="Add to card" textFill="#fbfafa">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <BorderPane layoutX="293.0" layoutY="-2.0" prefHeight="700.0" prefWidth="1024.0">
+         <center>
+            <TableView fx:id="DailySales" editable="true" prefHeight="486.0" prefWidth="1004.0" style="-fx-font-family: Monospaced; -fx-font-size: 14;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="157.0" text="Image" visible="false" />
+                <TableColumn fx:id="SizeColor" prefWidth="294.0" text="Product" />
+                  <TableColumn fx:id="price" minWidth="3.0" prefWidth="183.0" text="Price" />
+                  <TableColumn fx:id="qty" minWidth="1.0" prefWidth="87.0" text="Quantity" />
+                  <TableColumn fx:id="subtotal" prefWidth="255.166748046875" text="Subtotal" />
+                  <TableColumn fx:id="delete" prefWidth="82.0" text="X" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               
+            </TableView>
+         </center>
+         <bottom>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label text="Total: ">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="grandTotalLabel" text="0.00">
+                           <font>
+                              <Font name="Monospaced Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="DZD">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Discount: ">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Discount" text="0">
+                           <font>
+                              <Font name="Monospaced Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Ligne nembers: ">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Lignes" text="0">
+                           <font>
+                              <Font name="Monospaced Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="100.0" prefWidth="1.0" HBox.hgrow="ALWAYS" />
+                        <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#addRecieptItems" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #08a11f;" text="Checkout (F9)" textFill="#fffefe">
+                           <font>
+                              <Font name="Monospaced Regular" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </bottom>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="0.0" prefWidth="1004.0" spacing="10.0">
+                     <children>
+                        <Label text="Cashier:">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Cashier" text="Cashier">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="28.0" prefWidth="431.0" HBox.hgrow="ALWAYS" />
+                        <Label text="Customer:">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="Anonymous">
+                           <font>
+                              <Font name="Monospaced Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label text="Current Transaction">
+                     <font>
+                        <Font name="Monospaced Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
